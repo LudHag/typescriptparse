@@ -1,3 +1,10 @@
+export type Name = string;
+
+export interface Age {
+  years: number;
+  months: number;
+}
+
 export type Price = {
   currency: "sek" | "usd";
   value: number;
