@@ -1,1 +1,3 @@
-console.log("saf");
+import { parseSchema } from "./parse-schema";
+
+parseSchema("./testschema.yaml");

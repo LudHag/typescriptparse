@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Example API
+  version: 1.0.0
+paths: {}
+
+components:
+  schemas:
+    Price:
+      type: object
+      properties:
+        currency:
+          type: string
+          enum:
+            - sek
+            - usd
+        value:
+          type: number
+      required:
+        - currency
+        - value
+    Product:
+      type: object
+      properties:
+        productId:
+          type: number
+        name:
+          type: string
+        price:
+          $ref: "#/components/schemas/Price"
+        description:
+          type: string
+          nullable: true
+        imageUrl:
+          type: string
+          nullable: true
+      required:
+        - productId
+        - name
+        - price
+        - imageUrl

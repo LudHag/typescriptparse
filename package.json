@@ -2,7 +2,7 @@
   "name": "typescriptparse",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "start": "ts-node index.ts"
   },
@@ -11,5 +11,10 @@
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^10.1.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   }
 }
